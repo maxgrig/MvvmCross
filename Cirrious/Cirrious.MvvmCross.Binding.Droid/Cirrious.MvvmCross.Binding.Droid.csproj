@@ -15,8 +15,6 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidSupportedAbis>armeabi</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
-    <AndroidUseLatestPlatformSdk>
-    </AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v3.1</TargetFrameworkVersion>
     <MandroidI18n />
   </PropertyGroup>
@@ -128,10 +126,6 @@
     <Compile Include="Views\MvxTableLayout.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CrossCore\Cirrious.CrossCore.Droid\Cirrious.CrossCore.Droid.csproj">
-      <Project>{CAF8935F-56FE-4485-9D34-4A38FE79F6C9}</Project>
-      <Name>Cirrious.CrossCore.Droid</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\CrossCore\Cirrious.CrossCore\Cirrious.CrossCore.csproj">
       <Project>{CFF6F25A-3C3B-44EE-A54C-2ED4AAFF3ADB}</Project>
       <Name>Cirrious.CrossCore</Name>
@@ -144,9 +138,9 @@
       <Project>{D89351C1-D48F-4AD0-A0B9-353A93425AB7}</Project>
       <Name>Cirrious.MvvmCross.Localization</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\PortableSupport\System.Windows\System.Windows.Droid.csproj">
-      <Project>{72D13EE1-53A3-4A9F-9281-AE44CC5E92AC}</Project>
-      <Name>System.Windows.Droid</Name>
+    <ProjectReference Include="..\..\CrossCore\Cirrious.CrossCore.Droid\Cirrious.CrossCore.Droid.csproj">
+      <Project>{CAF8935F-56FE-4485-9D34-4A38FE79F6C9}</Project>
+      <Name>Cirrious.CrossCore.Droid</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

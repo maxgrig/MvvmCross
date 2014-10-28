@@ -24,7 +24,7 @@ namespace Cirrious.MvvmCross.Parse.StringDictionary
             get
             {
                 _byNameLookup = _byNameLookup ?? Mvx.Resolve<IMvxViewModelByNameLookup>();
-                return _byNameLookup;
+                return _byNameLookup; 
             }
         }
 
