@@ -16,7 +16,7 @@ using Cirrious.CrossCore.Droid.Views;
 namespace Cirrious.MvvmCross.Droid.Fragging
 {
     public abstract class MvxEventSourceFragmentActivity
-        : FragmentActivity
+        : Android.Support.V7.App.ActionBarActivity
         , IMvxEventSourceActivity
     {
         protected override void OnCreate(Bundle bundle)
