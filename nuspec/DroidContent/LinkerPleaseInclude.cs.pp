@@ -1,5 +1,6 @@
 ﻿using System.Collections.Specialized;
 using System.Windows.Input;
+using Android.App;
 using Android.Views;
 using Android.Widget;
 
@@ -51,7 +52,7 @@ namespace $rootnamespace$
             sb.ProgressChanged += (sender, args) => sb.Progress = sb.Progress + 1;
         }
 
-        public void Include(MvxActivity act)
+        public void Include(Activity act)
         {
             act.Title = act.Title + "";
         }

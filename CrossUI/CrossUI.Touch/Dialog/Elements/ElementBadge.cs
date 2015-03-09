@@ -96,10 +96,10 @@ namespace CrossUI.Touch.Dialog.Elements
         public nfloat GetHeight(UITableView tableView, NSIndexPath indexPath)
         {
             var size = new CGSize(tableView.Bounds.Width - 40, float.MaxValue);
-            var height = tableView.StringSize(Caption, Font, size, LineBreakMode).Height + 10;
+            var height = Caption.StringSize(Font, size, LineBreakMode).Height + 10;
 
             // Image is 57 pixels tall, add some padding
-            return Helpers.Max(height, 63);
+            return NMath.Max(height, 63);
         }
 
         public static UIImage MakeCalendarBadge(UIImage template, string smallText, string bigText)
